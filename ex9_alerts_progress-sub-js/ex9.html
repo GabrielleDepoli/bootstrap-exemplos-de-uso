@@ -17,9 +17,11 @@
         <!-- ================================
              BOTÕES DE CONTROLE DOS ALERTS
              ================================ -->
-
-
-        <!-- 1ª Digitação (Aqui) -->
+          <div class="mb-3">
+               <button class="btn btn-success me-2" onclick="mostrarSucesso()">Mostrar Sucesso</button>
+               <button class="btn btn-danger me-2" onclick="mostrarErro()">Mostrar Erro</button>
+               <button class="btn btn-warning" onclick="mostrarToast()">Mostrar Toast</button>
+          </div>
 
 
         <!-- ================================
@@ -28,9 +30,12 @@
              O JS adiciona "show" ao clicar no botão.
              ================================ -->
 
+          <div class="alert alert-success alert-dismissible fade" id="successAlert">
+               <strong>Sucesso!</strong> Operação realizada com sucesso!
+               <button class="btn-close" type="button" onclick="fecharAlert('successAlert')"></button>
+          </div>
 
-
-        <!-- 2ª Digitação (Aqui) -->
+        
 
 
 
@@ -38,6 +43,7 @@
              ALERT DE ERRO
              Mesmo comportamento do alert de sucesso.
              ================================ -->
+
         <div class="alert alert-danger alert-dismissible fade" id="errorAlert">
             <strong>Erro!</strong> Erro ao processar a operação!
             <button type="button" class="btn-close" onclick="fecharAlert('errorAlert')"></button>
@@ -49,10 +55,22 @@
              O JS usa a classe Bootstrap Toast para exibir/ocultar.
              ================================ -->
 
+            <div class="position-fixed top-0 end-0 p-3" style="z-index:10;">
+               <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
 
+                    <!-- Cabeçalho da notificação -->
+                    <div class="toast-header">
+                         <strong class="me-auto">Notificação</strong>
+                         <small>Agora</small>
+                         <button class="btn-close" type="button" data-bs-dismiss="toast"></button>
+                    </div>
 
-        <!-- 3ª Digitação (Aqui) -->
-
+                    <!-- Copo da notificação -->
+                    <div class="toast-body">
+                         Esta é uma mensagem de Toast!!! =)
+                    </div>
+               </div>
+            </div>
 
 
 
@@ -62,6 +80,7 @@
              A animação shimmer é ativada/desativada pelo JS
              adicionando/removendo a classe "barra-shimmer".
              ================================ -->
+
         <h5 class="mt-4">Progresso:</h5>
         <div class="progress mb-3">
             <div class="progress-bar"
@@ -77,10 +96,16 @@
              Botões para aumentar/diminuir e ligar/desligar a animação.
              ================================ -->
 
+            <div class="btn-group me-2">
+               <!-- Botão para aumentar a % da barra de progresso -->
+               <button class="btn btn-primary" onclick="updateProgress(-10)">-10%</button>
 
+                <!-- Botão para aumentar a % da barra de progresso -->
+               <button class="btn btn-primary" onclick="updateProgress(10)">+10%</button>
+            </div>
 
-
-        <!-- 4ª Digitação (Aqui) -->
+            <!-- Ligar/desligar (Animação da barra de progresso) -->
+             <button class="btn btn-success" id="toggleAnimationBtn" onclick="toggleAnimacao()">Ligar Animação</button>
 
         
 

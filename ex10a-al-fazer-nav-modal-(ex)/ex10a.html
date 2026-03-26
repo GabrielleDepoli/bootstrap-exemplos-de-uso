@@ -9,7 +9,71 @@
 <body>
     
 
-    <!-- 1ª Digitação (Aqui) -->
+     <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand">Meu Site</span>
+
+            <!-- Botão Contato -->
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContato">
+                Contato
+                
+            </button>
+
+<!-- Modal -->
+    <div class="modal fade" id="modalContato">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Cabeçalho -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Entre em Contato conosco!!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Corpo -->
+                <div class="modal-body">
+                    <form class="needs-validation" novalidate>
+
+
+
+
+                        <!-- Nome -->
+                        <div class="mb-3">
+                            <label class="form-label">Nome</label>
+                            <input type="text" class="form-control" required>
+                            <div class="invalid-feedback">
+                                Informe seu nome.
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label class="form-label">E-mail</label>
+                            <input type="email" class="form-control" required>
+                            <div class="invalid-feedback">
+                                Informe um e-mail válido.
+                            </div>
+                        </div>
+
+                        <!-- Mensagem -->
+                        <div class="mb-3">
+                            <label class="form-label">Mensagem</label>
+                            <textarea class="form-control" rows="3" required></textarea>
+                            <div class="invalid-feedback">
+                                Escreva uma mensagem.
+                            </div>
+                        </div>
+
+                        <!-- Botão -->
+                        <button class="btn btn-primary" type="submit">Enviar  (｡♥‿♥｡)</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 <script>

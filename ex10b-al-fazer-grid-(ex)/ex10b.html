@@ -22,7 +22,94 @@
 
     
 
-    <!-- 1ª Digitação (Aqui) -->
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand" href="#">Minha Loja</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Descontos</a>
+        </li>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Alerta -->
+<div class="container mt-3">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        ⚡ Promoção ativa: Frete grátis para todo o site!
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+</div>
+
+
+<!-- Carrossel -->
+<div class="container mt-3">
+    <div id="carouselExemplo" class="carousel slide w-75 mx-auto" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <!-- Primeira imagem do Carrossel -->
+            <div class="carousel-item active">
+                <img src="https://placehold.co/600x400/000/fff" alt="Slide-1"class="d-block w-100">
+            </div>
+
+            <!-- Segunda imagem do Carrossel -->
+            <div class="carousel-item">
+                <img src="https://placehold.co/600x400/orange/fff" alt="Slide-2" class="d-block w-100">
+            </div>
+
+            <!-- Terceira imagem do Carrossel -->
+            <div class="carousel-item">
+                <img src="https://placehold.co/600x400/gray/000" alt="Slide-3" class="d-block w-100">
+            </div>
+        </div>
+
+        <!-- Adicionando botões de controle do Carroussel -->
+
+        <!-- Botão de retorno -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExemplo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Botão de avançar -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExemplo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+
+
+
+<!-- Barra de progresso -->
+<div class="container text-center mt-5">
+    <h4>Desbloqueie seu desconto!</h4>
+
+    <div class="progress mb-3" style="height: 30px;">
+        <div id="progress-bar" class="progress-bar progress-bar-animated" style="width: 0%;">
+            0%
+        </div>
+    </div>
+
+    <!-- Botão de desconto -->
+    <button id="increase-progress" class="btn btn-primary">
+        Ganhar Desconto („• ֊ •„)
+    </button>
+</div>
 
 
 
@@ -38,7 +125,7 @@
             progressBar.textContent = width + "%";
 
             if (width === 100) {
-                alert("🎉 Parabéns! Você desbloqueou um desconto especial!");
+                alert("🎉 Parabéns! Você desbloqueou um desconto especial na nossa loja!");
             }
         }
     });
