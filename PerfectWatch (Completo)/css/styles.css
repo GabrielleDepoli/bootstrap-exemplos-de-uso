@@ -113,7 +113,7 @@ body {
         text-align:left;
     }
 }
-parou aqui!!!!
+
 /* Ajusta espaçamento entre itens da barra de navegação */
 #navbar-items {
     justify-content: space-between;
@@ -314,13 +314,13 @@ parou aqui!!!!
 
 /* Define altura e ajuste o redimensionamento das imagens nos cartões */
 .card-img-top {
-  height: 220px;
+  height: 200px;
   object-fit: cover;
 }
 
 /* Define espaçamento interno para a seção de best sellers */
 #best-sellers {
-  padding: 4rem 0;
+  padding: 4em 0;
 }
 
 /* Remove margens horizontais para a linha de produtos */
@@ -337,8 +337,8 @@ parou aqui!!!!
 .title {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.5em;
+  margin-bottom: 1em;
   text-align: center;
 }
 
@@ -352,14 +352,14 @@ parou aqui!!!!
 
 /* Estilos para os preços */
 .original-price {
-  font-size: 14px;
+  font-size: 18px;
   color: #9f9f9f;
   text-decoration: line-through;
-  margin-right: 14px;
+  margin-right: 10px;
 }
 
 .discount-price {
-  font-size: 20px;
+  font-size: 24px;
   color: #976DF2; /* Cor destacada para o preço mais baixo */
 }
 
@@ -372,7 +372,7 @@ parou aqui!!!!
 /* Ajusta o tamanho da imagem nos cartões */
 .card-img {
   width: 140px;
-  margin: 2rem auto;
+  margin: 2em auto;
 }
 
 /* Estilos para a categoria do produto nos cartões */
@@ -382,7 +382,7 @@ parou aqui!!!!
 
 /* Estilo para o texto nos cartões */
 .card .card-text {
-  margin: 2rem 0;
+  margin: 2em 0;
   font-weight: bold;
 }
 
@@ -404,8 +404,8 @@ parou aqui!!!!
 /* Define cor do fundo, espaçamento interno e margens para o banner */
 #bottom-banner {
   background-color: #0D0D0D;
-  padding: 4rem;
-  margin-bottom: 4rem;
+  padding: 6em;
+  margin-bottom: 4em;
   text-align: center;
 }
 
@@ -418,22 +418,220 @@ parou aqui!!!!
 
 /* Define estilo para o botão */
 #bottom-banner .btn {
-  margin: 2rem;
+  margin: 2em;
   font-weight: bold;
-  padding: 1rem;
+  padding: 1em;
 }
 
 /* Define tamanho máximo para a imagem */
 #bottom-banner img {
-  max-width: 375px;
+  max-width: 175px;
 }
 
 /* Media query para telas com largura mínima de 768px */
 @media (min-width: 768px) {
   /* Ajusta tamanho do título para telas maiores */
   #bottom-banner h2 {
-    font-size: 5rem;
+    font-size: 5em;
   }
 }
 
-/* -------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* (Novidades) NEW PRODUCTS */
+
+/* Define uma margem inferior para a seção de Novidades */
+#new-products {
+    margin-bottom: 5rem;
+}
+
+/* Estilos para o banner de Novidades */
+#new-products-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D0D0D;
+}
+
+/* Estilos para o títulodo banner de Novidades */
+#new-products-banner h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* Ajusta o espaçamento interno das colunas dos produtos */
+#new-products .col-md-4 {
+    padding: 0;
+}
+
+/* Define tamanho e margens para as imagensnos cartões de produtos */
+#new-products .card img {
+    height: 150px;
+    width: 90px;
+    margin: 2em auto;
+}
+
+/* ___________________________________________________________ */
+/* GALLERY */
+
+/* Estilos para os containers das imagens  */
+#gallery .image-container {
+    background-size: cover;
+    background-position: center;
+    height: 225px;
+    cursor: pinter;
+    transition: .5s;
+    border: 3px solid #0D0D0D;
+}
+
+/* Estilos ao passar o mouse sobre as imagens*/
+#gallery .image-container:hover {
+    border-color: #976DF2;
+}
+
+/* Define a imagem de fundo para cada container */
+#insta1 {
+    background-image: url('../img/insta1.jpg');
+}
+
+#insta2 {
+    background-image: url('../img/insta2.jpg');
+}
+
+#insta3 {
+    background-image: url('../img/insta3.jpg');
+}
+
+#insta4 {
+    background-image: url('../img/insta4.jpg');
+}
+
+#insta5 {
+    background-image: url('../img/insta5.jpg');
+}
+
+#insta6 {
+    background-image: url('../img/insta6.jpg');
+}
+
+/* ___________________________________________________ */
+/* FOOTER */
+
+/* Estilos para a linha que separa os links do rodapé */
+#footer-links-container {
+    border-bottom: 1px solid #F2F2F2;
+}
+
+/* Estilos para as colunas no rodapé */
+#footer .footer-column {
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilos para as colunas do rodapé em telas maiores */
+@media(min-width: 795px) {
+    #footer .footer-column {
+        padding: 5em 2em;
+    }
+}
+
+/* Estilos para os títulos das colunas de links no rodapé */
+#footer-links-container h3 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+/* Estilos para os itens de lista nos links do rodapé */
+#footer-links-container li {
+    font-size: .8em;
+    text-align: center;
+}
+
+/* Estilos para os links nos itens de lista do rodapé */
+#footer-links-container li a {
+    text-decoration: none;
+}
+
+/* Estilos ao passar o mouse sobre os links nos itens de lista do rodapé */
+#footer-links-container li a:hover {
+    color: #976DF2;
+}
+
+/* Estilos para a coluna central no rodapé */
+#footer-center {
+    border-left: 1px solid #F2F2F2;
+    border-right: 1px solid #F2F2F2;
+}
+
+/* Estilos para o título da coluna central no rodapé */
+#footer-center h3 {
+    font-weight: 900;
+}
+
+/* Estilos para o número de telefone na coluna central do rodapé */
+#footer-center .store-phone {
+    color: #976DF2;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: -15px;
+}
+
+/* _________________________________________________________________ */
+/* NEWS */
+
+/* Estilos para o container da seção de newsletter */
+#newsletter-container {
+    background-color: #0D0D0D;
+    border-bottom: 1px solid #F2F2F2;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para o formulário de inscrição na newsletter */
+#news-form {
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+/* Estilos para o ícone no formulário de inscrição */
+#news-form i {
+    font-size: 1.5em;
+}
+
+/* Estilos para o botão no formulário de inscrição */
+#news-form .btn {
+    color: #FFF;
+}
+
+/* Estilos para o container das redes sociais */
+#social-container {
+    margin: 20px auto;
+}
+
+/* Estilos para os ícones de redes sociais  */
+#social-container i {
+    font-size: 1.5em;
+    margin: 10px;
+    cursor: pointer;
+    color: #F2F2F2;
+    transition: .3s;
+}
+
+/* Estilos ao passar o mouse sobre os ícones de redes sociais */
+#social-container i:hover {
+    color: #976DF2;
+}
+
+/* _______________________________________________________________ */
+/* COPY */
+
+/* Estilos para o container de direitos autorais */
+#copy-container {
+    text-align: center;
+    padding: 30px;
+}
